@@ -1,0 +1,26 @@
+var express = require('express');
+var app = express();
+var config = require('./config/config');
+var logger = require('./util/logger');
+var passport = require('passport');
+var userRouter = require('./api/user/routes');
+var notebookRouter = require('./api/notebook/routes');
+
+require('mongoose').connect(config.db.url);
+require('./middleware/middleware')(app);
+require('./api/user/auth');
+
+app.use(passport.initialize());
+
+app.use('/auth', userRouter);
+app.use('/notebooks', notebookRouter);
+
+app.use(function(err, req, res, next) {
+  if (err.name === 'UnauthorizedError') {
+    res.status(400).send('Invalid token');
+  } else {
+    logger.error(err.stack);
+  }
+});
+
+module.exports = app;
