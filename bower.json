@@ -6,13 +6,18 @@
     "Brunation11"
   ],
   "license": "ISC",
+  "homepage": "https://github.com/Brunation11/notify",
   "moduleType": [],
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-ui-router": "^0.2.18",
+    "angular-messages": "^1.5.3"
+  }
 }
