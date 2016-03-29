@@ -1,0 +1,32 @@
+<h3 class="center auth-header">Sign in</h3>
+<div class="col-4 col-offset-4 auth-container">
+  <div class="center">
+    {{ error }}
+  </div>
+  <form novalidate name="authForm">
+    <div class="center" ng-messages="authForm.username.$error" ng-if="authForm.username.$dirty">
+      <div ng-message="required">
+        <p>Please enter a username</p>
+      </div>
+      <div ng-message="minlength">
+        <p>Username must be at least 8 characters</p>
+      </div>
+    </div>
+    <label>Username:</label>
+    <input class="form-control form-field" type="text" name="username" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="user.username" required ng-minlength="8" />
+    <div class="center" ng-messages="authForm.password.$error" ng-if="authForm.password.$dirty">
+      <div ng-message="required">
+        <p>Please enter a password</p>
+      </div>
+      <div ng-message="minlength">
+        <p>Password must be at least 8 characters</p>
+      </div>
+    </div>
+    <label>Password:</label>
+    <input class="form-control form-field" type="password" name="password" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="user.password" required ng-minlength="8" />
+    <div class="center">
+      <input class="btn" ng-disabled="authForm.$invalid" ng-click="register()" type="submit" value="Register" />
+      <input class="btn" ng-disabled="authForm.$invalid" ng-click="login()" type="submit" value="Log In" />
+    </div>
+  </form>
+</div>

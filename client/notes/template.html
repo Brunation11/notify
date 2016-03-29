@@ -1,0 +1,12 @@
+<div class="col-4 menu-container">
+  <h1>NOTES</h1>
+  <p>{{ notes.length }} notes</p>
+  <a ui-sref=".newNote()">New Note</a>
+  <div ng-repeat="note in notes">
+    <div>
+      <a ui-sref=".note({note_id: note._id})">{{ note.title }}</a>
+      <button class="btn" ng-click="deleteNote(note)">Delete</button>
+    </div>
+  </div>
+</div>
+
