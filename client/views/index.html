@@ -1,0 +1,18 @@
+<DOCTYPE html>
+<html lang="en" ng-app="notify">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" width="device-width, initial-scale=1.0">
+    <%- css("manifest") %>
+    <%- js("manifest") %>
+    <title></title>
+  </head>
+  <body>
+    <div class="col-12">
+      <div ui-view></div>
+      <div ui-view="header"></div>
+      <div ui-view="menu"></div>
+      <div ui-view="content"></div>
+    </div>
+  </body>
+</html>
