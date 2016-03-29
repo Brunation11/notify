@@ -2,7 +2,6 @@ var NoteModel = require('./model');
 var _ = require('lodash');
 
 exports.params = function(req, res, next, id) {
-  console.log("made it into params");
   NoteModel.findById(id, function(err, note) {
     if (err) {
       next(err);
