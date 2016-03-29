@@ -12,6 +12,10 @@ require('./api/user/auth');
 
 app.use(passport.initialize());
 
+app.get('/', function(req, res) {
+  res.render('index');
+});
+
 app.use('/auth', userRouter);
 app.use('/notebooks', notebookRouter);
 

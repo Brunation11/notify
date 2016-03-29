@@ -33,6 +33,7 @@ exports.post = function(req, res, next) {
   notebook.author = req.payload.username;
   notebook.save(function(err, notebook) {
     if (err) {
+      res.status(400).json({error: 'Notebook already exists'});
       next(err);
     } else {
       res.json(notebook);
