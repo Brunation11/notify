@@ -1,0 +1,32 @@
+.auth-header {
+  margin-top: 5rem;
+  color: #77D297;
+  font-weight: 100;
+  font-size: 2rem;
+}
+
+.auth-container {
+  border-radius: 3px;
+  border: 1px solid #DEDEDE;
+  padding: 2rem;
+}
+
+.auth-container .form-field {
+  height: 2.5rem;
+  border-radius: 3px;
+  border: 1px solid #DEDEDE;
+  font-size: 1rem;
+  padding: 0 .75rem;
+  background: #FAFFBD;
+}
+
+.auth-container .btn {
+  background: #2DBE60;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  width: 48%;
+  padding: 1rem 0;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
