@@ -1,4 +1,4 @@
-<div class="col-8 note-container">
+<div class="col-9 note-container">
   <div class="center">
     {{ error }}
   </div>
@@ -9,10 +9,11 @@
         <p>Please enter a name for the note</p>
       </div>
     </div>
-    <input class="col-12" type="text" name="title" placeholder="Title" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="note.title" required />
-    <input class="col-12 note-content-field" type="text" name="content" placeholder="Content" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="note.content" required />
-    <div class="center">
-      <input class="btn" ng-click="submitNote()" type="submit" value="Submit" />
-    </div>
+
+    <input class="col-12 note-form-field note-form-title" type="text" name="title" placeholder="Title" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="note.title" required />
+    <!-- <textarea class="col-12 note-content-field note-form-field" type="text" name="content" placeholder="" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="note.content" required /> -->
+    <div class="col-12 note-content-field note-form-field" name="content" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="note.content" required text-angular ng-model="note.content" ></div>
+    <input class="btn" ng-click="submitNote()" type="submit" value="Submit" />
   </form>
+
 </div>
