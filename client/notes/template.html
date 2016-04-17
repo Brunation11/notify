@@ -1,12 +1,20 @@
-<div class="col-4 menu-container">
-  <h1>NOTES</h1>
-  <p>{{ notes.length }} notes</p>
-  <a ui-sref=".newNote()">New Note</a>
+<div class="col-3 notes-menu-container">
+  <div class="col-12 notes-menu-meta">
+    <div class="col-6">
+      <p>{{ notes.length }} notes</p>
+    </div>
+    <div class="col-6 pull-right new-note">
+      <a class="link" ui-sref=".newNote()">+</a>
+    </div>
+  </div>
   <div ng-repeat="note in notes">
-    <div>
-      <a ui-sref=".note({note_id: note._id})">{{ note.title }}</a>
-      <button class="btn" ng-click="deleteNote(note)">Delete</button>
+    <div class="col-12 notes-menu-single-container" ng-mouseover="enableEdit(note)" ng-mouseleave="disableEdit(note)">
+      <div class="col-6">
+        <a class="link meta" ui-sref=".note({note_id: note._id})">{{ note.title }}</a>
+      </div>
+      <div class="col-6 pull-right">
+        <button ng-show="note.editable" class="btn-discreet meta" ng-click="deleteNote(note)">Delete</button>
+      </div>
     </div>
   </div>
 </div>
-
