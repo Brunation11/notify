@@ -2,6 +2,12 @@
 //= require angular/angular.min
 //= require angular-ui-router/release/angular-ui-router.min
 //= require angular-messages/angular-messages.min
+//= require marked/marked.min.js
+//= require angular-marked/dist/angular-marked.min
+//= require highlightjs/highlight.pack.min
+//= require textAngular/dist/textAngular-rangy.min
+//= require textAngular/dist/textAngular-sanitize.min
+//= require textAngular/dist/textAngular.min
 //local assets
 //= require app/app
 //= require auth/service
