@@ -1,23 +1,27 @@
-<div class="col-4 menu-container">
-  <div class="center">
-    {{ error }}
-  </div>
-  <form name="notebookForm">
-    <div class="center" ng-messages="notebookForm.name.$error" ng-if="notebookForm.name.$dirty">
-      <div ng-message="required">
-        <p>Please enter a notebook name</p>
-      </div>
-    </div>
-    <input class="form-control form-field" type="text" name="name" placeholder="Name" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="notebook.name" required />
+<div class="col-3 notebooks-menu-container">
+  <div class="notebook-form-container">
     <div class="center">
-      <input class="btn" ng-disabled="notebookForm.$invalid" ng-click="createNotebook()" type="submit" value="Submit" />
+      {{ error }}
     </div>
-  </form>
+    <form name="notebookForm">
+      <div class="center" ng-messages="notebookForm.name.$error" ng-if="notebookForm.name.$dirty">
+        <div ng-message="required">
+          <p>Please enter a notebook name</p>
+        </div>
+      </div>
+      <input class="notebook-form-field" type="text" name="name" placeholder="  Name" ng-model-options="{updateOn: 'default blur', debounce: {default: 500, blur: 0}}" ng-model="notebook.name" required />
+      <input class="btn-discreet new-notebook" ng-disabled="notebookForm.$invalid" ng-click="createNotebook()" type="submit" value="+" />
+    </form>
+  </div>
 
   <div ng-repeat="notebook in notebooks">
-    <div class="notebook-list-container">
-      <a ui-sref=".notebook({notebook_id: notebook._id})">{{ notebook.name }}</a>
-      <button class="btn" ng-click="deleteNotebook(notebook)">Delete</button>
+    <div class="col-12 notebooks-menu-single-container" ng-mouseover="enableEdit(notebook)" ng-mouseleave="disableEdit(notebook)">
+      <div class="col-6">
+        <a class="link meta" ui-sref=".notebook({notebook_id: notebook._id})">{{ notebook.name }}</a>
+      </div>
+      <div class="col-6 pull-right">
+        <button ng-show="notebook.editable" class="btn-discreet meta" ng-click="deleteNotebook(notebook)">Delete</button>
+      </div>
     </div>
   </div>
 </div>
