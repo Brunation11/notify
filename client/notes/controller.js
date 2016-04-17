@@ -5,6 +5,14 @@ app.controller('notesController', ['$state', '$scope', 'notebook', 'notesService
   $scope.notes = notebook.notes;
   $scope.note = note;
 
+  $scope.enableEdit = function(note){
+    note.editable = true;
+  };
+
+  $scope.disableEdit = function(note){
+    note.editable = false;
+  };
+
   var errorReset = function() {
     delete notesService.error;
   };

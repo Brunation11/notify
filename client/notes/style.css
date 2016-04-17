@@ -1,3 +1,64 @@
+.notes-menu-container {
+  border: 1px solid #F0F0F0;
+  height: 100vh;
+}
+
 .note-content-field {
   height: 41rem;
+}
+
+.notes-menu-header {
+  font-weight: 100;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.notes-menu-meta {
+  padding: 0 1rem;
+}
+
+.new-note {
+  padding-top: .5rem;
+}
+
+.new-note .link:hover {
+  color: #daf2e2;
+}
+
+.notes-menu-single-container {
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 1.5rem 1rem;
+}
+
+.notes-menu-single-container:hover {
+  background: #daf2e2;
+}
+
+.note-container {
+  margin-top: 3.25rem;
+  padding: 0 2rem;
+}
+
+.note-form-field {
+  border: none;
+  outline: none;
+  padding: 1rem 0;
+  font-size: 1rem;
+}
+
+.note-form-title {
+  border-bottom: 1px solid #F0F0F0;
+  font-size: 2.25rem;
+  font-weight: 100;
+  color: green;
+  padding: 1rem 0;
+}
+
+.notes-menu-single-container:hover .meta {
+  color: #fff;
+}
+
+.new-note {
+  font-size: 1.5rem;
 }

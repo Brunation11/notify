@@ -1,10 +1,39 @@
-.menu-container {
-  padding: 1rem;
+.notebooks-menu-container {
   border: 1px solid #ECECEC;
-  height: 95vh;
+  height: 100vh;
 }
 
-.notebook-list-container {
-  padding: 1rem;
-  border-bottom: 1px solid #ECECEC;
+.notebook-form-container {
+  padding: .2rem 1rem 0 1rem;
+}
+
+.notebook-form-field {
+  width: 90%;
+  border: none;
+  border-bottom: 1px solid #F0F0F0;
+  height: 1.5rem;
+  outline: none;
+}
+
+.new-notebook {
+  font-size: 1.5rem;
+  margin-left: .5rem;
+}
+
+.new-notebook:hover {
+  color: #daf2e2;
+}
+
+.notebooks-menu-single-container {
+  border-top: 1px solid #F0F0F0;
+  border-bottom: 1px solid #F0F0F0;
+  padding: 1.5rem 1rem;
+}
+
+.notebooks-menu-single-container:hover {
+  background: #daf2e2;
+}
+
+.notebooks-menu-single-container:hover .meta {
+  color: #fff;
 }

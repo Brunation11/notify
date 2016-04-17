@@ -74,6 +74,7 @@ list
   border: none;
   background: none;
   padding: 0;
+  font-size: 1rem;
 }
 
 .form-control {
@@ -81,9 +82,13 @@ list
   margin: .25rem 0;
 }
 
-.test {
-  color: red;
-  border: 1px solid red;
+.ta-editor {
+    min-height: 300px;
+    height: auto;
+    overflow: auto;
+    font-family: inherit;
+    font-size: 100%;
+    margin:20px 0;
 }
 
 /********************
