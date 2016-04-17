@@ -1,4 +1,10 @@
 /*
+bower componenets
+= require highlightjs/styles/solarized-light
+= require textAngular/dist/textAngular
+
+= require font-awesome/css/font-awesome.min
+local assets
 = require app/style
 = require auth/style
 = require navBar/style
