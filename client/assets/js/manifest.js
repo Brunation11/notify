@@ -4,10 +4,10 @@
 //= require angular-messages/angular-messages
 //= require marked/marked.min
 //= require angular-marked/dist/angular-marked
-//= require highlightjs/highlight.pack.min
+//= require highlightjs/highlight.pack
 //= require textAngular/dist/textAngular-rangy.min
-//= require textAngular/dist/textAngular-sanitize.min
-//= require textAngular/dist/textAngular.min
+//= require textAngular/dist/textAngular-sanitize
+//= require textAngular/dist/textAngular
 //local assets
 //= require app/app
 //= require auth/service
