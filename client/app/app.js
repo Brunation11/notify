@@ -1,24 +1,27 @@
 // var app = angular.module('notify', ['ui.router', 'ngMessages', 'hc.marked', 'textAngular']);
-var app = angular.module('notify', ['ui.router', 'ngMessages', 'hc.marked']);
+var app = angular.module('notify', ['ui.router', 'ngMessages', 'textAngular']);
 
-app.config(['$stateProvider', '$urlRouterProvider', 'markedProvider', '$provide', function($stateProvider, $urlRouterProvider, markedProvider, $provide) {
+app.config(['$stateProvider', '$urlRouterProvider', '$provide', function($stateProvider, $urlRouterProvider, $provide) {
 
-  markedProvider.setOptions({
-    gfm: true,
-    tables: true,
-    breaks: false,
-    pedantic: false,
-    sanitize: true,
-    smartLists: true,
-    smartypants: false,
-    highglight: function(code, lang) {
-      if (lang) {
-        return hljs.highlight(lang, code, true).value;
-      } else {
-        return hljs.highlightAuto(code).value;
-      }
-    }
-  });
+
+
+  // FOR USE WITH MARKDOWN
+  // markedProvider.setOptions({
+  //   gfm: true,
+  //   tables: true,
+  //   breaks: false,
+  //   pedantic: false,
+  //   sanitize: true,
+  //   smartLists: true,
+  //   smartypants: false,
+  //   highglight: function(code, lang) {
+  //     if (lang) {
+  //       return hljs.highlight(lang, code, true).value;
+  //     } else {
+  //       return hljs.highlightAuto(code).value;
+  //     }
+  //   }
+  // });
 
 
  $provide.decorator('taOptions', ['$delegate', function(taOptions){
