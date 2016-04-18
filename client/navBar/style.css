@@ -1,7 +1,11 @@
 .nav-container {
   z-index: -1;
-  position: fixed;
+  /*position: fixed;*/
   border: 1px solid #ECECEC;
   height: 3.25rem;
   padding: .5rem 1rem;
+}
+
+.navbar-links {
+  z-index: 999;
 }
