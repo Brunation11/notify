@@ -4,7 +4,7 @@ var config = {
   dev: 'development',
   test: 'testing',
   prod: 'production',
-  port: process.env.Port || 3000,
+  port: process.env.PORT || 3000,
   secrets: {
     jwt: process.env.JWT || 'SECRET'
   }
