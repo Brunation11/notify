@@ -7,7 +7,7 @@
 //= require highlightjs/highlight.pack
 //= require textAngular/dist/textAngular-rangy.min
 //= require textAngular/dist/textAngular-sanitize
-//= require textAngular/dist/textAngular
+//= require textAngular/dist/textAngular.min
 //local assets
 //= require app/app
 //= require auth/service
