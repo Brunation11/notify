@@ -1,6 +1,6 @@
 // var app = angular.module('notify', ['ui.router', 'ngMessages', 'hc.marked', 'textAngular']);
 
-var app = angular.module('notify', ['ui.router']);
+var app = angular.module('notify', ['ui.router', 'ngMessages']);
 
 app.config(['$stateProvider', '$urlRouterProvider', '$provide', function($stateProvider, $urlRouterProvider, $provide) {
 
