@@ -1,5 +1,5 @@
 // bower components
-//= require angular/angular.min
+//= require angular/angular
 //= require angular-ui-router/release/angular-ui-router.min
 //= require angular-messages/angular-messages.min
 //= require marked/marked.min.js
