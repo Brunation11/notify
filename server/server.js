@@ -6,7 +6,7 @@ var passport = require('passport');
 var userRouter = require('./api/user/routes');
 var notebookRouter = require('./api/notebook/routes');
 
-require('mongoose').connect(config.db.url);
+require('mongoose').connect(process.env.MONGODB_URI || config.db.url);
 require('./middleware/middleware')(app);
 require('./api/user/auth');
 
