@@ -1,13 +1,13 @@
 // bower components
 //= require angular/angular
 //= require angular-ui-router/release/angular-ui-router
-//= require angular-messages/angular-messages
-//= require marked/marked
-//= require angular-marked/dist/angular-marked
-//= require highlightjs/highlight.pack
-//= require textAngular/dist/textAngular-rangy
-//= require textAngular/dist/textAngular-sanitize
-//= require textAngular/dist/textAngular
+//= require angular-messages/angular-messages.min
+//= require marked/marked.min
+//= require angular-marked/dist/angular-marked.min
+//= require highlightjs/highlight.pack.min
+//= require textAngular/dist/textAngular-rangy.min
+//= require textAngular/dist/textAngular-sanitize.min
+//= require textAngular/dist/textAngular.min
 //local assets
 //= require app/app
 //= require auth/service
