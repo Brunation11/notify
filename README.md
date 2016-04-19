@@ -4,7 +4,7 @@ A simple note taking application that allows users to create, update, and read n
 
 ##Description
 
-NOTIFY is a simple note taking application that lets users create notebooks and fill them with notes. At the heart of Notify is a WYSIWYG for full note editing.
+NOTIFY is a simple note taking application that lets users create notebooks and fill them with notes. At the heart of Notify is a WYSIWYG that gives users the ability to fully edit notes.
 
 ##Technologies and Dependencies Used
 
@@ -13,7 +13,7 @@ NOTIFY is a simple note taking application that lets users create notebooks and 
 * Node
 * lodash
 * mongoose
-* bcrypt
+* passport
 * morgan
 * body-parser
 * colors
